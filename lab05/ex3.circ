@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="3.8.0-61c.c58792e" version="1.0">
-  This file is intended to be loaded by Logisim-evolution v3.8.0-61c.c58792e(https://github.com/61c-teach/logisim-evolution).
+<project source="3.8.0-61c.f1d5ac0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.8.0-61c.f1d5ac0(https://github.com/61c-teach/logisim-evolution).
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
       <a name="appear" val="center"/>
-      <a name="facing" val="west"/>
     </tool>
     <tool name="Pin">
       <a name="appearance" val="classic"/>
@@ -37,6 +36,11 @@
       <a name="font" val="SansSerif plain 12"/>
     </tool>
   </lib>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#Input/Output-Extra" name="6"/>
+  <lib desc="#Plexers" name="7"/>
+  <lib desc="#TTL" name="8"/>
+  <lib desc="#Soc" name="9"/>
   <main name="AddMachine"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -79,6 +83,9 @@
       <a name="label" val="clk"/>
       <a name="locked" val="true"/>
     </comp>
+    <comp lib="0" loc="(120,140)" name="Constant">
+      <a name="width" val="8"/>
+    </comp>
     <comp lib="0" loc="(480,180)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
@@ -95,5 +102,25 @@
       <a name="output" val="true"/>
       <a name="width" val="8"/>
     </comp>
+    <comp lib="2" loc="(190,150)" name="Adder"/>
+    <comp lib="3" loc="(220,190)" name="Register">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <wire from="(100,210)" to="(180,210)"/>
+    <wire from="(120,140)" to="(150,140)"/>
+    <wire from="(130,160)" to="(130,300)"/>
+    <wire from="(130,160)" to="(150,160)"/>
+    <wire from="(130,300)" to="(310,300)"/>
+    <wire from="(180,210)" to="(180,270)"/>
+    <wire from="(180,270)" to="(220,270)"/>
+    <wire from="(190,150)" to="(220,150)"/>
+    <wire from="(220,150)" to="(220,220)"/>
+    <wire from="(220,150)" to="(480,150)"/>
+    <wire from="(220,260)" to="(220,270)"/>
+    <wire from="(280,220)" to="(310,220)"/>
+    <wire from="(310,220)" to="(310,300)"/>
+    <wire from="(310,220)" to="(480,220)"/>
+    <wire from="(480,150)" to="(480,180)"/>
+    <wire from="(480,220)" to="(480,240)"/>
   </circuit>
 </project>
